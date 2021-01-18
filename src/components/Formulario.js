@@ -24,15 +24,24 @@ const Formulario = () => {
   //Cuando el usuario presiona agregar cita
   const submitCita = (e) => {
     e.preventDefault();
-    
-    //Validar
+    console.log(mascota);
 
+    //Validar
+    if (
+      mascota.trim() === "" ||
+      propietario.trim() === "" ||
+      fecha.trim() === "" ||
+      hora.trim() === "" ||
+      sintomas.trim() === ""
+    ) {
+      console.log("Hay un error");
+      return;
+    }
     //Asignar un ID
 
     //Crear la Cita
 
     //Reiniciar el form
-
   };
 
   return (
